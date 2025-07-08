@@ -7,7 +7,6 @@ main_menu
 
 SOURCE_FOLDER_NAME=$(basename "$SOURCE_PATH")
 
-##MAKE NEW VARIABLE TO BE ABLE TO LOCATE REMOTE DIRECTORY THAT ISNT THE WEB DIRECTORY, I MEAN HOME DIRECTORY ON THE DEVICE
 
     echo -e "\n \e[93m=========== SETTINGS ===========\e[0m"
     echo -e "\n\e[1;35mMENU > BACKUPS\e[0m\n"
@@ -178,7 +177,7 @@ echo -e "\n \e[93m=========== SETTINGS ===========\e[0m"
 
     case "$remote_backup_type" in
         1)
-            # Push local folder to remote
+            #  Local folder to remote
             if [[ -z "$REMOTE_BACKUP_PATH" ]]; then
                 echo -e "\n\e[91m⚠ No remote backup location configured.\e[0m"
                 read -p "Create temporary remote backup folder? (y/n): " temp_choice
@@ -208,7 +207,7 @@ echo -e "\n \e[93m=========== SETTINGS ===========\e[0m"
             ;;
 
         2)
-            # Remote folder to remote backup (remote-local copy)
+            # Remote folder to remote backup 
             read -p "Enter full path of folder ON REMOTE to back up: " remote_source_path
             if [[ -z "$remote_source_path" ]]; then
                 echo -e "\e[91mNo source folder provided.\e[0m"
