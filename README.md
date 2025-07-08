@@ -16,7 +16,7 @@ A simple interactive Bash script to sync local website files to a remote server 
 
 ##  Overview
 
-**Local2Pi-WebTransfer** helps you quickly transfer your website files to a remote Linux device (like a Raspberry Pi) and set up the web server environment correctly.
+**KefkaberryWebsync** helps you quickly transfer your website files to a remote Linux device (like a Raspberry Pi) and set up the web server environment correctly.
 I made this myself to help me swiftly transfer my local website files to be uploaded to my raspberry pi which uses nginx to upload my website to the world wide web.
 As I have developed this over time, this script overall will:
 
