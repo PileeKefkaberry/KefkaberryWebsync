@@ -121,7 +121,7 @@ case $option in
 	5)
 
 	    echo -e "\n \e[93m=== HELP ===\e[0m"
-	    "$SCRIPT_DIR/WebsiteUploaderHelp.sh" | less -R
+	    "$SCRIPT_DIR/Scripts/WebsiteUploaderHelp.sh" | less -R
 	    ;;
         6)
             echo "Exiting script, Goodbye!"
