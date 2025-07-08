@@ -6,7 +6,6 @@ set_healthcheck() {
     
 source "$SCRIPT_DIR/Scripts/configure_settings.sh"
     
-# Add this near the top of set_healthcheck.sh (after the initial sourcing)
 update_or_add_config() {
     local key="$1"
     local value="$2"
@@ -28,10 +27,11 @@ update_or_add_config() {
 	  
         echo -e "\n \e[93m==== Website Status Check Configuration ====\e[0m"
         echo -e "\nCurrent settings:"
+	
 	  # Define all possible checks
 ALL_CHECKS=("nginx" "ports" "ip" "ping" "ssl" "dns" "firewall" "disk")
 
-# Turn enabled checks into array for easier comparison
+
 IFS=',' read -ra ENABLED <<< "$STATUS_CHECKS_ENABLED"
 
 echo
@@ -70,11 +70,11 @@ done
             2)
                 echo -e "\n\e[96mEnable or disable each check below (y/n):\e[0m"
                 
-                # Define all valid checks
+
                 ALL_CHECKS=("nginx" "ports" "ip" "ping" "ssl" "dns" "firewall" "disk")
                 ENABLED_CHECKS=()
 
-                # Convert current enabled list to array
+
                 IFS=',' read -ra CURRENT_ENABLED <<< "$STATUS_CHECKS_ENABLED"
 
                 for check in "${ALL_CHECKS[@]}"; do
@@ -87,7 +87,7 @@ done
 
                     # Ask user
                     read -p "Enable $check? [y/n] (default: $default): " response
-                    response=${response,,}  # convert to lowercase
+                    response=${response,,}  
 
                     if [[ -z "$response" ]]; then
                         response="$default"
@@ -98,7 +98,7 @@ done
                     fi
                 done
 
-                # Join enabled checks into comma-separated string
+
                 STATUS_CHECKS_ENABLED=$(IFS=','; echo "${ENABLED_CHECKS[*]}")
                 echo -e "\e[92mEnabled checks updated: $STATUS_CHECKS_ENABLED\e[0m"
 
