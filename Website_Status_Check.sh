@@ -18,10 +18,10 @@ RESET_COLOR='\e[0m'
 PASS='\e[92m'
 FAIL='\e[91m'
 
-# Function to check if a check is enabled
+# check if a check is enabled
 is_check_enabled() {
     local check="$1"
-    [[ ",$STATUS_CHECKS_ENABLED," == *",$check,"* ]]  # Changed from CHECKS_ENABLED to STATUS_CHECKS_ENABLED
+    [[ ",$STATUS_CHECKS_ENABLED," == *",$check,"* ]]  
 }
 
 # Script to perform website and server health checks
