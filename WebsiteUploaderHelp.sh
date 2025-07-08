@@ -19,8 +19,7 @@ ${GREEN}1.${RESET} ${BLUE}[OVERVIEW]
 ${GREEN}2.${RESET} ${BLUE}[FEATURES]
 ${GREEN}3.${RESET} ${BLUE}[REQUIREMENTS]
 ${GREEN}4.${RESET} ${BLUE}[THE CONFIG FILE]
-${GREEN}5.${RESET} ${BLUE}[POTENTIAL ISSUES]
-${GREEN}6.${RESET} ${BLUE}[LICENSE]${RESET}
+${GREEN}5.${RESET} ${BLUE}[POTENTIAL ISSUES/FAQ]
 
 ${HEADING}1. OVERVIEW:${RESET}
 ${BLUE}This script helps you sync a local website folder to your remote device (eg Raspberry Pi) or another configured linux server.
@@ -165,26 +164,6 @@ ${BLUE}3. Learn commands through the documentation and perhaps use them in the s
 ${BLUE}This sucks
 
 ${BLUE}Answer: I know, but so do you.
-
-${HEADING}6. LICENSE:${RESET}
-
-[Project Name]
-Copyright (C) 2015 Pilee Kefkaberry
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/>.
-
-
 
 "
 
