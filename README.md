@@ -1,4 +1,4 @@
-# Local2Pi-WebTransfer
+# KefkaberryWebsync
 
 A simple interactive Bash script to sync local website files to a remote server (e.g., a Raspberry Pi running Nginx or Apache).
 
