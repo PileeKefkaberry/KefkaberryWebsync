@@ -5,7 +5,7 @@ echo "||     WELCOME TO THE LOCAL → REMOTE WEBSITE TRANSFER SCRIPT     ||"
 echo -e "================================================================\e[0m"
 
 echo -e "\e[96mThis script helps you transfer a local website directory to a Remote Device (eg Raspberry Pi)\e[0m"
-echo -e "\e[96m||Created by Pilee Kefkaberry @ 22nd June 2025 ----- V1.3||\e[0m"
+echo -e "\e[96m||Created by Pilee Kefkaberry @ 8th July 2025 ----- V1.3||\e[0m"
 echo
 echo -e "\e[96mFEATURES:\e[0m"
 echo -e "  \e[35m├\e[0m Syncs your local website folder to the device to update your website via a web server (nginx or apache)"
