@@ -14,7 +14,7 @@ A simple interactive Bash script to sync local website files to a remote server 
 
 ---
 
-## 📆 Overview
+##  Overview
 
 **Local2Pi-WebTransfer** helps you quickly transfer your website files to a remote Linux device (like a Raspberry Pi) and set up the web server environment correctly.
 I made this myself to help me swiftly transfer my local website files to be uploaded to my raspberry pi which uses nginx to upload my website to the world wide web.
@@ -38,7 +38,7 @@ I strongly encourage learning and to dissect everything this whole script packag
 
 ---
 
-## 🚀 Features
+##  Features
 
 Features will be described in order as it shows in the main menu:
 
@@ -112,13 +112,13 @@ This section displays this documentation in the terminal to help you understand 
 
 ---
 
-### 🔚 Exit
+###  Exit
 
 Cleanly exit the script.
 
 ---
 
-## 📃 Requirements
+##  Requirements
 
 - Bash shell
 - SSH enabled on both local and remote machines
