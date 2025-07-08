@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "[DEBUG] configure_settings.sh loaded"
+
 
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
