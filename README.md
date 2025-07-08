@@ -128,7 +128,7 @@ Cleanly exit the script.
 
 ---
 
-## 5. The Config File
+##  The Config File
 
 The config file by default is named `WebsiteTransferConfig.cfg` which stores the settings you have made. You can edit this either via the script or through any text editor of your choice. The file should typically look like:
 
@@ -147,7 +147,7 @@ Edit this file directly or use the **Settings** menu in the script.
 
 ---
 
-## 6. Potential Issues / FAQ
+##  Potential Issues / FAQ
 
 ###  How do I set up the remote host?
 
