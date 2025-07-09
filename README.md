@@ -45,11 +45,11 @@ Features will be described in order as it shows in the main menu:
 
 ### 1. Start Website Transfer
 
-├ Syncs your local directory, the folder where your website files are kept ${GREEN}(eg `/home/user/Documents/Website_Folder`)  
-├ It will SSH into the device to move this directory to the remote device ${GREEN}(eg `/home/user/Website_Folder` ON REMOTE DEVICE)
-├ SSH will then move the folder to the required place for nginx/apache to serve ${GREEN}(eg `var/www/html/Wesbite_Folder`)
-├ File Permissions will be preserved so nginx and apache will function without interupption once the transfer is complete
-├ It will restart nginx/apache to recognise the updated directory
+- Syncs your local directory, the folder where your website files are kept ${GREEN}(eg `/home/user/Documents/Website_Folder`)
+- It will SSH into the device to move this directory to the remote device ${GREEN}(eg `/home/user/Website_Folder` ON REMOTE DEVICE)
+- SSH will then move the folder to the required place for nginx/apache to serve ${GREEN}(eg `var/www/html/Wesbite_Folder`)
+- File Permissions will be preserved so nginx and apache will function without interupption once the transfer is complete
+- It will restart nginx/apache to recognise the updated directory
 
 > ⚠️ Assumes `SSH`, `rsync`, and `sudo` are available on both devices
 
@@ -57,17 +57,17 @@ Features will be described in order as it shows in the main menu:
 
 ### 2. Run Website Status Check
 
-├ SSHs into the remote device and begins to perform a website check
-├ Website check can be configured in Settings
-├ The check involves:
-├ Checks if nginx is running on the device 
-├ Checks if port 80 and port 443 is open (HTTP + HTTPS)
-├ Checks if the public and domain IP match of the device
-├ It will ping your website to see if it responds online
-├ Checks your SSL Certificates on the device
-├ Perform a DNS Lookup for your website
-├ Check your UFW status (if configured on the device)
-├ Check Disk Space on the device
+- SSHs into the remote device and begins to perform a website check
+-  Website check can be configured in Settings
+- The check involves:
+- Checks if nginx is running on the device 
+- Checks if port 80 and port 443 is open (HTTP + HTTPS)
+- Checks if the public and domain IP match of the device
+- It will ping your website to see if it responds online
+- Checks your SSL Certificates on the device
+- Perform a DNS Lookup for your website
+- Check your UFW status (if configured on the device)
+- Check Disk Space on the device
 
 Every check can be toggled on or off easily in settings to suit your setup as not everyone would want to check disk space or have UFW (Uncomplicated Firewall).
 
